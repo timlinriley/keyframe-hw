@@ -1,0 +1,225 @@
+/* // keyframes
+body{
+    width:90vw;
+}
+
+
+@keyframes runLeft {
+    0%{
+        background-color: red;
+        margin-left: 0%;
+    }
+    
+    50%{
+        background-color: green;
+        margin-left: 100%;
+    }
+
+
+    100%{
+        background-color: yellow;
+        margin-left:0%;
+    }
+}
+
+.ball{
+    border: solid blue;
+    height: 90px;
+    width: 90px;
+    background-color: lightblue;
+    border-radius: 50%;    
+    animation: runLeft 10s ease-in infinite;
+}
+
+@keyframes falling {
+    0%{
+        margin-top: 0%
+}
+50%{
+    margin-top: 25%;
+}
+100%{
+    margin-top: 50%;
+}
+}
+
+.fallbtn{
+    border-radius: 10%;
+    margin-top: 20px;
+    width: 50px;
+
+}
+
+.falling{
+    animation: falling 3s ease-in infinite;
+}
+
+.main{
+    display: flex;
+} */
+.bouncemain{
+    height: 80vh;
+    width: 60vw;
+    border: solid black;
+}
+.bounce{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    animation: bouncing 5s ease-in infinite;
+}
+@keyframes bouncing {
+    0%{
+        margin-top: 5%;
+    }
+
+    20%{
+        margin-top: 75%;
+        margin-left: 10%;
+    }
+
+    40%{
+        margin-top: 25%;
+        margin-left: 40%;
+    }
+
+    60%{
+        margin-top: 75%;
+        margin-left: 60%;
+    }
+
+    80%{
+        margin-top: 40%;
+        margin-left: 80%;
+    }
+
+    100%{
+        margin-top: 75%;
+        margin-left: 90%;
+    }
+}
+body{
+    height: 60vh;
+    width: 60vw;
+}
+
+.logo{
+    color: blue;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 60px;
+    font-weight: 900;
+    padding: 20px;
+    /* border: solid black; */
+    width: 50%;
+    height: 100px;
+}
+@keyframes zoom {
+    100%{ font-size: 120px;
+}
+}
+.logo:hover{
+    animation: zoom 1s ease-in-out;
+
+}
+
+.target{
+    display: flex;
+    border: solid black;
+    width: 60vw;
+    height: 100px;
+   
+    align-items: center;
+}
+
+.target1{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    border: solid black;
+    margin-left: 50%;
+    position: absolute;
+}
+  
+.ball2{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: solid black;
+    background-color: red;
+    /* animation: hittarget 2s ease-in infinite; */
+ 
+}
+@keyframes hittarget {
+    0%{
+       margin-left: 0%
+    }
+   100%{
+        margin-left: 100%;
+
+   }
+    }
+
+.startball{
+    animation: hittarget 1.5s infinite;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: solid black;
+    background-color: red;
+}
+.starttarget{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.stoptarget{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.wrap{
+    font-size: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: wrap1 3s linear infinite running;
+    animation-direction: normal;
+}
+
+@keyframes wrap1 {
+    15%{
+      margin-left:25%;
+      }  
+    30%{
+       margin-left:50%;
+        }  
+    45%{
+        margin-left:75%;
+        }  
+
+    60%{
+        margin-left:100%;
+        }  
+    75%{
+        margin-left: 125%;
+    }
+    100%{ margin-left:175%;
+    }
+}
+
+.paused{
+    animation-play-state: paused;
+}
+
+.spin{
+    height: 120px;
+    width: 120px;
+    animation: spinning 3s ease-in infinite;
+    /* border: solid black; */
+}
+@keyframes spinning{
+    
+        from {transform:rotate(0deg);}
+        to {transform:rotate(359deg);}
+    
+}
+
